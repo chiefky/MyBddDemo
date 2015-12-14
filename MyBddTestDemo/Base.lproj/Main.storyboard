@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,135 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dta-QD-bPI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.082969482760000005" green="0.67493431969999995" blue="0.67446091799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="piU-UZ-pBI"/>
+                                    <constraint firstAttribute="height" constant="30" id="rOE-gX-lhV"/>
+                                </constraints>
+                                <state key="normal" title="推出视图B">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="piU-UZ-pBI"/>
+                                        <exclude reference="rOE-gX-lhV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="piU-UZ-pBI"/>
+                                        <include reference="rOE-gX-lhV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8eu-M5-D0k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-Lx-XgQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.082969482760000005" green="0.67493431969999995" blue="0.67446091799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="eBI-xc-VQz"/>
+                                    <constraint firstAttribute="height" constant="30" id="v4h-ni-Flp"/>
+                                </constraints>
+                                <state key="normal" title="推出视图A">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eBI-xc-VQz"/>
+                                        <exclude reference="v4h-ni-Flp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="eBI-xc-VQz"/>
+                                        <include reference="v4h-ni-Flp"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtS-mS-7bO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLt-g9-BfB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.082969482760000005" green="0.67493431969999995" blue="0.67446091799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6zV-jJ-1wM"/>
+                                    <constraint firstAttribute="width" constant="130" id="IRx-dx-l32"/>
+                                </constraints>
+                                <state key="normal" title="推出视图C">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6zV-jJ-1wM"/>
+                                        <exclude reference="IRx-dx-l32"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6zV-jJ-1wM"/>
+                                        <include reference="IRx-dx-l32"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="je9-ge-3lU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FLt-g9-BfB" firstAttribute="top" secondItem="dta-QD-bPI" secondAttribute="bottom" constant="36" id="87y-Da-lzY"/>
+                            <constraint firstItem="FLt-g9-BfB" firstAttribute="leading" secondItem="dta-QD-bPI" secondAttribute="leading" id="9Uz-YW-bJa"/>
+                            <constraint firstItem="dvV-Lx-XgQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E4q-ii-TIu"/>
+                            <constraint firstItem="dta-QD-bPI" firstAttribute="top" secondItem="dvV-Lx-XgQ" secondAttribute="bottom" constant="40" id="Vda-W7-Ixz"/>
+                            <constraint firstItem="dta-QD-bPI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WnR-TW-b3t"/>
+                            <constraint firstItem="dta-QD-bPI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mfz-Zx-H8p"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dta-QD-bPI"/>
+                                <exclude reference="dvV-Lx-XgQ"/>
+                                <exclude reference="FLt-g9-BfB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="E4q-ii-TIu"/>
+                                <exclude reference="Vda-W7-Ixz"/>
+                                <exclude reference="WnR-TW-b3t"/>
+                                <exclude reference="mfz-Zx-H8p"/>
+                                <exclude reference="87y-Da-lzY"/>
+                                <exclude reference="9Uz-YW-bJa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dta-QD-bPI"/>
+                                <include reference="dvV-Lx-XgQ"/>
+                                <include reference="FLt-g9-BfB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="E4q-ii-TIu"/>
+                                <include reference="Vda-W7-Ixz"/>
+                                <include reference="WnR-TW-b3t"/>
+                                <include reference="mfz-Zx-H8p"/>
+                                <include reference="87y-Da-lzY"/>
+                                <include reference="9Uz-YW-bJa"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="buttonA" destination="dvV-Lx-XgQ" id="FHL-8i-4mc"/>
+                        <outlet property="buttonB" destination="dta-QD-bPI" id="DRV-vd-TSx"/>
+                        <outlet property="buttonC" destination="FLt-g9-BfB" id="0zB-81-DI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="429"/>
         </scene>
     </scenes>
 </document>

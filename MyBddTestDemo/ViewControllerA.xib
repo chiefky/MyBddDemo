@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerA">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A视图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMq-L5-Fas">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="miF-Qy-Tr9"/>
+                        <constraint firstAttribute="height" constant="21" id="zMM-On-vtq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="miF-Qy-Tr9"/>
+                            <exclude reference="zMM-On-vtq"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="miF-Qy-Tr9"/>
+                            <include reference="zMM-On-vtq"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yx-vG-0EL">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="LWc-SZ-Oqw"/>
+                        <constraint firstAttribute="height" constant="30" id="Yiw-7H-66U"/>
+                    </constraints>
+                    <state key="normal" title="back">
+                        <color key="titleColor" red="0.033393252210000002" green="0.001532993072" blue="0.0067367550409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LWc-SZ-Oqw"/>
+                            <exclude reference="Yiw-7H-66U"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="LWc-SZ-Oqw"/>
+                            <include reference="Yiw-7H-66U"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Mzu-7K-BmW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9yx-vG-0EL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="9UU-lX-XWd">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="zMq-L5-Fas" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QdK-mI-wBP"/>
+                <constraint firstItem="zMq-L5-Fas" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="XGB-JW-ATl"/>
+                <constraint firstItem="9yx-vG-0EL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="dPR-96-BFD">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="zMq-L5-Fas"/>
+                    <exclude reference="9yx-vG-0EL"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9UU-lX-XWd"/>
+                    <exclude reference="dPR-96-BFD"/>
+                    <exclude reference="QdK-mI-wBP"/>
+                    <exclude reference="XGB-JW-ATl"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="zMq-L5-Fas"/>
+                    <include reference="9yx-vG-0EL"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9UU-lX-XWd"/>
+                    <include reference="dPR-96-BFD"/>
+                    <include reference="QdK-mI-wBP"/>
+                    <include reference="XGB-JW-ATl"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
